@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+@model ejemplo_api_mvc.Models.Contry
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Información del País</title>
+</head>
+<body>
+    <h1>Información del País</h1>
+    
+    <!-- Mostrar la información del país en una tabla -->
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <td>@Model.Name</td>
+        </tr>
+        <tr>
+            <th>Capital</th>
+            <td>@Model.Capital</td>
+        </tr>
+        <tr>
+            <th>Área</th>
+            <td>@Model.Area</td>
+        </tr>
+        <!-- Agrega más campos según la estructura de datos del país -->
+    </table>
+</body>
+</html>
